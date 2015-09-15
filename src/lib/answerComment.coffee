@@ -35,7 +35,7 @@ exports = module.exports = (req, res, options, contractors, payload) ->
 
   api.user.get {}, (err, data) ->
     if not err and method is 'check' and data.login isnt poster
-      signed = _.contains contractors, argument or sender
+      signed = _.contains contractors, (argument or sender).toLowerCase()
 
       commentData      = { user, repo, number }
       commentData.body = comment.getCommentBody signed,

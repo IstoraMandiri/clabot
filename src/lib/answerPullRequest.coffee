@@ -13,7 +13,7 @@ exports = module.exports = (req, res, options, contractors, payload) ->
   user   = payload.repository.owner.login
 
   skip res, sender, options, contractors, { user, repo }, (contractors) ->
-    signed = _.contains contractors, sender
+    signed = _.contains contractors, sender.toLowerCase()
 
     commentData      = { user, repo, number }
     commentData.body = comment.getCommentBody signed,

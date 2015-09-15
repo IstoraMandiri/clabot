@@ -1,8 +1,8 @@
 {
-  "name": "clabot",
-  "description": "A bot to take the pain out of Contributor License Agreements",
+  "name": "clabot-khan",
+  "description": "A bot to take the pain out of Contributor License Agreements (modified to accept case-insenstive github usernames)",
   "version": "0.1.0",
-  "homepage": "https://github.com/clabot/clabot",
+  "homepage": "https://github.com/jdan/clabot",
   "author": {
     "name": "Stephan Bönnemann",
     "email": "clabot@excellenteasy.com",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/clabot/clabot.git"
+    "url": "git://github.com/jdan/clabot.git"
   },
   "bugs": {
-    "url": "https://github.com/clabot/clabot/issues"
+    "url": "https://github.com/jdan/clabot/issues"
   },
   "licenses": [
     {
